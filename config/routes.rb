@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get "/number_params" => "params#guess_num"
 
+  get "/number_params/:number" => "params#guess_num"
+
   get "/segment_params/:this_key" => "params#segment_params"
 
 end
