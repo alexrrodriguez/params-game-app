@@ -32,4 +32,9 @@ class ParamsController < ApplicationController
     render json: {message: "This value is #{input_value}"}
   end
 
+  def body_params
+    input_value = params["secret_info"]
+    render json: { message: "the secret info is #{input_value}"}
+  end
+
 end

@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "/segment_params/:this_key" => "params#segment_params"
 
+  post "/body_params" => "params#body_params"
+
 end
