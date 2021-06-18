@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 
   post "/body_params" => "params#body_params"
 
+  post "/number_params" => "params#guess_num"
+
+  post "/user_params" => "params#username"
+
 end

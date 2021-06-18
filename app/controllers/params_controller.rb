@@ -37,4 +37,16 @@ class ParamsController < ApplicationController
     render json: { message: "the secret info is #{input_value}"}
   end
 
+  def username
+    user = "hugh"
+    pass = "swordfish"
+    username = params[:username]
+    password = params[:password]
+    if user == username && pass == password
+      render json: {message: "Valid credentials"}
+    else
+      render json: {message: "Invalid credentials"}
+    end
+  end
+
 end
